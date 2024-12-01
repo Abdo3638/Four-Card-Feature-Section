@@ -1,0 +1,143 @@
+/* Start Variables */
+:root {
+  --title-clr: #4c4e61;
+  --paragraph-clr: #a3a5ae;
+}
+/* End Variables */
+/* Start Global Rules */
+
+a {
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+main {
+  padding: 5rem 1rem;
+}
+
+h1,
+h2 {
+  color: var(--title-clr);
+}
+
+p {
+  color: var(--paragraph-clr);
+  line-height: 1.8;
+}
+
+/* End Global Rules */
+
+/* Start Article */
+
+.article {
+  margin-bottom: 2rem !important;
+  text-align: center;
+}
+
+.article h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.article h1 span {
+  font-weight: 200;
+}
+
+@media (min-width: 768px) {
+  .article {
+    margin: auto;
+    max-width: 500px;
+  }
+  .article h1 {
+    font-size: 2rem;
+  }
+}
+
+/* End Article */
+/* Start Cards */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 1400px;
+  }
+}
+
+.cards .middle-cards .card:first-child {
+  margin-bottom: 1.5rem;
+}
+
+.cards .card {
+  background-color: #fff;
+  box-shadow: 0 0 16px hsl(180deg 62% 55% / 15%);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .cards .card {
+    width: 400px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1115px) {
+  .cards .convertable {
+    transform: translate(-53%, -54%);
+  }
+}
+
+.cards .card:first-child {
+  border-top: 0.5rem solid hsl(0, 78%, 62%);
+}
+
+.middle-cards .card:first-child {
+  border-top: 0.5rem solid hsl(180, 62%, 55%);
+}
+
+.middle-cards .card:last-child {
+  border-top: 0.5rem solid hsl(212, 86%, 64%);
+}
+
+.cards .convertable {
+  border-top: 0.5rem solid hsl(34, 97%, 64%);
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.card p {
+  margin-bottom: 3rem;
+}
+
+.card img {
+  position: relative;
+  left: calc(100% - 64px);
+}
+
+/* End Cards */
